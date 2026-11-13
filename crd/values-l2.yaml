@@ -1,0 +1,9 @@
+l2announcements:
+  enabled: true
+
+externalIPs:
+  enabled: true
+
+gatewayAPI:
+  hostNetwork:
+    enabled: false
