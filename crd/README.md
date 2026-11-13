@@ -8,7 +8,7 @@ This repository contains the Custom Resource Definitions (CRDs) and custom Helm 
 .
 ├── crd/
 │   └── all-cilium-crds.yaml   # Pre-packaged Cilium CRDs
-├── values2.yml                # Custom Helm values configured for the private registry
+├── values.yaml                # Custom Helm values configured for the private registry
 └── README.md
 ```
 
@@ -52,12 +52,12 @@ helm repo update
 
 ### 4. Install Cilium via Helm
 
-Deploy Cilium into the `kube-system` namespace using `values2.yml`:
+Deploy Cilium into the `kube-system` namespace using `values.yaml`:
 
 ```bash
 helm install cilium arad/cilium \
   -n kube-system \
-  -f values2.yml
+  -f values.yaml
 ```
 
 *(If your internal Nexus certificate is not added to the system CA trust store, append `--insecure-skip-tls-verify` to both `helm repo add` and `helm install`.)*
