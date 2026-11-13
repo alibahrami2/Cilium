@@ -1,0 +1,13 @@
+l2announcements:
+  enabled: false
+
+externalIPs:
+  enabled: false
+
+gatewayAPI:
+  hostNetwork:
+    enabled: true
+    # Optional: restrict Gateway API hostNetwork ports (80/443) to specific nodes
+    # nodes:
+    #   matchLabels:
+    #     node-role.kubernetes.io/worker: ""
