@@ -42,6 +42,8 @@ hubble:
   enabled: true
   relay:
     enabled: true
+    gops:
+      enabled: false
     image:
       repository: kube.aradarpanet.ir/cilium/hubble-relay
       tag: v1.19.3
